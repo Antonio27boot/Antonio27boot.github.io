@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Fotos</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Imagenes</h1>
+        <div class="image-container">
+            <div class="image"><img src="../img/DoñaHilda/RanchoHilda.jpg"></div>
+            <div class="image"><img src="../img/DoñaHilda/RanchoHilda.jpg"></div>
+            <div class="image"><img src="../img/DoñaHilda/RanchoHilda.jpg"></div>
+            <div class="image"><img src="../img/DoñaHilda/RanchoHilda.jpg"></div>
+            <div class="image"><img src="../img/DoñaHilda/RanchoHilda.jpg"></div>
+            <div class="image"><img src="../img/SanFernando/IMG_20220830_074840.jpg"></div>
+        </div>
+
+<div class="popup-image">
+    <span>&times;</span>
+    <img src="../img/LaPonderosa/LaPonderosa.jpg" alt="">
+</div>
+</div>
+
+
+
+<script>
+    document.querySelectorAll('.image-container img').forEach(image =>{
+     image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+    } 
+});
+document.querySelector('.popup-image span').onclick = () => {
+    document.querySelector('.popup-image').style.display ='none';
+}
+</script>
+</body>
+</html>
