@@ -8,7 +8,17 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#textodescription{
+    display: none;;
+}
 
+#textodescription1{
+    display: none;;
+}
+
+#textodescription2{
+    display: none;;
+}
 /*Cards*/
 .content{
 	width: 100%;

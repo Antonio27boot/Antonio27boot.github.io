@@ -15,8 +15,11 @@
         <br>
         <hr><br>
         <p>Puedes ver las diferentes opciones que tenemos disponibles para que los puedas visitar con familia y amigos y
-            pasarla en grande🌴</p>
-
+            pasarla en grande🌴.</p>
+        <p>
+            <strong>Recomendamos antes de rentar una propiedad realizar una visita previa, para que no seas parte de
+                estafas.</strong>
+        </p>
     </div>
 
 
@@ -33,27 +36,46 @@
                     <li>Precio las 24 horas: $225</li>
                 </strong>
 
-
                 <li>Capacidad para 12 personas.</li>
-                <li> $20 dólares por persona extra.</li>
-                <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
-                <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
-                    carro)).</li>
-                <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
-                </li>
 
-                <br>
-                <strong>RANCHO LA PONDEROSA LE OFRECE:</strong><br>
-                <li>5 habítaciones con aire acondicionado(con horario de 7 de la noche a 8 de la mañana) baño privado (9
-                    camas)</li>
-                <li>Cocina totalmente equipada licuadora, microondas, 2 refrigeradoras utensilios de cocina y su
-                    respectiva barbacoa.</li>
-                <li>1 pantalla y equipo de sonido.</li>
-                <li>Glorieta con 5 hamacas y haraganas.</li>
-                <li>Amplia zona verde con cancha de fútbol y cancha de basquet.</li>
-                <li>Lo más importante seguridad 24/7.</li>
-                <li>Wifi y cable satelital.</li>
-                <strong>NOTA:</strong> Traer papel, shampoo, jabón y toallas.<br>
+                <a type="button" onclick="mostrar();">Mostrar más informacion</a>
+                <div id="textodescription">
+
+                    <li> $20 dólares por persona extra.</li>
+                    <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
+                    <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
+                        carro)).</li>
+                    <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
+                    </li>
+
+                    <br>
+                    <strong>RANCHO LA PONDEROSA LE OFRECE:</strong><br>
+                    <li>5 habítaciones con aire acondicionado(con horario de 7 de la noche a 8 de la mañana) baño
+                        privado (9 camas)</li>
+                    <li>Cocina totalmente equipada licuadora, microondas, 2 refrigeradoras utensilios de cocina y su
+                        respectiva barbacoa.</li>
+                    <li>1 pantalla y equipo de sonido.</li>
+                    <li>Glorieta con 5 hamacas y haraganas.</li>
+                    <li>Amplia zona verde con cancha de fútbol y cancha de basquet.</li>
+                    <li>Lo más importante seguridad 24/7.</li>
+                    <li>Wifi y cable satelital.</li>
+                    <strong>NOTA:</strong> Traer papel, shampoo, jabón y toallas.<br>
+
+
+                    <a type="button" onclick="ocultar();">Ocultar informacion</a>
+
+                    <script>
+                        function mostrar() {
+                            document.getElementById('textodescription').style.display = 'block';
+                        }
+
+                        function ocultar() {
+                            document.getElementById('textodescription').style.display = 'none';
+                        }
+                    </script>
+                </div>
+
+
 
 
                 <a href="Vistas/LaPonderosa.html">Ver Fotos</a>
@@ -74,23 +96,41 @@
                 </strong>
 
                 <li>Capacidad para 8 personas.</li>
-                <li> $10 dólares por persona extra.</li>
-                <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
-                <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
-                    carro)).</li>
-                <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
-                </li>
 
-                <br>
-                <strong>RANCHO DOÑA HILDA LE OFRECE:</strong><br>
-                <li>3 habítaciones con aire (con horario de 7 de la noche a 8 de la mañana) baño privado (4 camas)</li>
-                <li>Cocina totalmente equipada licuadora, microondas, 1 refrigeradora, utensilios de cocina.</li>
-                <li>1 pantalla.</li>
-                <li>4 hamacas.</li>
-                <li>Piscina grande de plástico.</li>
-                <li>Amplia zona verde.</li>
-                <li>Lo más importante seguridad 24/7.</li>
-                <li>Wifi y cable satelital.</li>
+                <a type="button" onclick="mostrar1();">Mostrar más informacion</a>
+                <div id="textodescription1">
+
+                    <li> $10 dólares por persona extra.</li>
+                    <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
+                    <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
+                        carro)).</li>
+                    <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
+                    </li>
+
+                    <br>
+                    <strong>RANCHO DOÑA HILDA LE OFRECE:</strong><br>
+                    <li>3 habítaciones con aire (con horario de 7 de la noche a 8 de la mañana) baño privado (4 camas)
+                    </li>
+                    <li>Cocina totalmente equipada licuadora, microondas, 1 refrigeradora, utensilios de cocina.</li>
+                    <li>1 pantalla.</li>
+                    <li>4 hamacas.</li>
+                    <li>Piscina grande de plástico.</li>
+                    <li>Amplia zona verde.</li>
+                    <li>Lo más importante seguridad 24/7.</li>
+                    <li>Wifi y cable satelital.</li>
+                    <a type="button" onclick="ocultar1();">Ocultar informacion</a>
+                </div>
+
+                <script>
+                    function mostrar1() {
+                        document.getElementById('textodescription1').style.display = 'block';
+                    }
+
+                    function ocultar1() {
+                        document.getElementById('textodescription1').style.display = 'none';
+                    }
+                </script>
+
 
                 <a href="Vistas/DoñaHilda.html">Ver Fotos</a>
             </div>
@@ -109,26 +149,40 @@
                 </strong>
 
                 <li>Capacidad para 12 personas.</li>
-                <li>$10 dólares por persona extra.</li>
-                <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
-                <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
-                    carro)).</li>
-                <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
-                </li>
+                <a type="button" onclick="mostrar2();">Mostrar más informacion</a>
+                <div id="textodescription2">
 
-                <br>
-                <strong>RANCHO SAN FERNANDO LE OFRECE:</strong> <br>
+                    <li>$10 dólares por persona extra.</li>
+                    <li>Se cancelan $2 dólares por adulto en administración por estar en zona privada.</li>
+                    <li>No tenemos acceso a playa dentro de la residencial (( playa pública, los Cobanos a 10 minutos en
+                        carro)).</li>
+                    <li>Reservación únicamente con el 50% en cuenta bancaria y el resto en efectivo el día de su visita.
+                    </li>
 
-                <li>5 habitaciones en total (7 camas, 4 colchonetas); 2 habitaciones con aire acondicionado y baño
-                    propio
-                    y 3 habitaciones con ventilador y su baño propio.</li>
-                <li>Cocina totalmente equipada, refrigeradora, microondas, cocina a gas, barbacoa, comedor para 6
-                    personas.</li>
-                <li>Sala de estar. </li>
-                <li>Wifi</li>
-                <li>Hamacas.</li>
-                <li>Piscina.</li>
+                    <br>
+                    <strong>RANCHO SAN FERNANDO LE OFRECE:</strong> <br>
 
+                    <li>5 habitaciones en total (8 camas, 4 colchonetas); 2 habitaciones con aire acondicionado y baño
+                        propio
+                        y 3 habitaciones con ventilador y su baño propio.</li>
+                    <li>Cocina totalmente equipada, refrigeradora, microondas, cocina a gas, barbacoa, comedor para 6
+                        personas.</li>
+                    <li>Sala de estar. </li>
+                    <li>Wifi</li>
+                    <li>Hamacas.</li>
+                    <li>Piscina.</li>
+                    <a type="button" onclick="ocultar2();">Ocultar informacion</a>
+                </div>
+
+                <script>
+                    function mostrar2() {
+                        document.getElementById('textodescription2').style.display = 'block';
+                    }
+
+                    function ocultar2() {
+                        document.getElementById('textodescription2').style.display = 'none';
+                    }
+                </script>
 
                 <a href="Vistas/SanFernando.html">Ver Fotos</a>
             </div>
@@ -176,11 +230,11 @@
 
                 <div class="colum3">
 
-                    <h1>Informacion Contactos</h1>
+                    <h1>Informacion</h1>
 
                     <div class="row2">
                         <img src="icon/house.png">
-                        <label>Salinitas 3</label>
+                        <label>Residencial Villas de Salinitas 3, una cuadra antes de Hotel Decameron</label>
                     </div>
 
                     <div class="row2">
@@ -202,7 +256,7 @@
         <div class="container-footer">
             <div class="footer">
                 <div class="copyright">
-                    © 2022 Todos los Derechos Reservados | <a href="">Antonio Ramirez</a>
+                    © 2023 Todos los Derechos Reservados | <a href="">Antonio Ramirez</a>
                 </div>
             </div>
         </div>
